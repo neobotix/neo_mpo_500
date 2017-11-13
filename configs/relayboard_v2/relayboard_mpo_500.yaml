@@ -1,0 +1,69 @@
+#Parameters for Relayboard
+
+#Device on which relayboard is attached
+ComPort: /dev/ttyUSB1
+relayboard_timeout: 2.0
+requestRate: 25
+
+#Define the version of the protocol used by the Relayboard (the type of lcd interface)
+protocol_version: 2
+
+#relayboard
+hasIOBoard: 0
+hasUSBoard: 0
+
+drive2:
+  motor_active: 1
+  homing_active: 0
+  EncIncrPerRevMot: 10000
+  VelMeasFrqHz: 1
+  GearRatio: 25
+  BeltRatio: 1
+  Sign: -1.0
+  VelMaxEncIncrS: 300000
+  AccIncrS: 500000
+  DecIncrS: 500000
+  VelPModeEncIncrS: 10
+  CANId: 2
+
+drive3:
+  motor_active: 1
+  homing_active: 0
+  EncIncrPerRevMot: 10000
+  VelMeasFrqHz: 1
+  GearRatio: 25
+  BeltRatio: 1
+  Sign: -1.0
+  VelMaxEncIncrS: 300000
+  AccIncrS: 500000
+  DecIncrS: 500000
+  VelPModeEncIncrS: 10
+  CANId: 3
+
+drive4:
+  motor_active: 1
+  homing_active: 0
+  EncIncrPerRevMot: 10000
+  VelMeasFrqHz: 1
+  GearRatio: 25
+  BeltRatio: 1
+  Sign: -1.0
+  VelMaxEncIncrS: 300000
+  AccIncrS: 500000
+  DecIncrS: 500000
+  VelPModeEncIncrS: 10
+  CANId: 4
+
+drive5:
+  motor_active: 1
+  homing_active: 0
+  EncIncrPerRevMot: 10000
+  VelMeasFrqHz: 1
+  GearRatio: 25
+  BeltRatio: 1
+  Sign: -1.0
+  VelMaxEncIncrS: 300000
+  AccIncrS: 500000
+  DecIncrS: 500000
+  VelPModeEncIncrS: 10
+  CANId: 5

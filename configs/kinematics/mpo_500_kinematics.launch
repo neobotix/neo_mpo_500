@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+	<arg name="sendTF" default="true"/>
+	<param if="$(arg sendTF)" name="mecanum_node/sendTransform" value="true"/>
+	<param unless="$(arg sendTF)" name="mecanum_node/sendTransform" value="false"/>
+	<rosparam command="load" ns="mecanum_node" file="$(find neo_mpo_500)/configs/kinematics/$(env ROBOT)_kinematics.yaml"/>
+	<node pkg="neo_kinematics_mecanum" type="neo_kinematics_mecanum_node" name="mecanum_node" ns="mecanum_node" respawn="false" output="screen">
+	</node>
+</launch>
+
+

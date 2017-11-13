@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+	
+	<!-- upload parameters -->
+	<rosparam command="load" ns="relayboard_v2" file="$(find neo_mpo_500)/configs/relayboard_v2/relayboard_$(env ROBOT).yaml"/>
+	
+	<!-- start relayboard node -->
+	<node pkg="neo_relayboard_v2" type="neo_relayboard_v2_node" ns="relayboard_v2" name="relayboard_v2_node" respawn="false" output="screen"/>
+
+
+</launch>
