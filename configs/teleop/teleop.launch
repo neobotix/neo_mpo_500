@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<launch>
+	<!-- upload parameters-->
+	<rosparam command="load" ns="neo_teleop" file="$(find neo_mpo_500)/configs/teleop/$(env ROBOT)_teleop.yaml"/>
+
+	<!-- start cob teleop node -->
+	<node pkg="neo_teleop" type="neo_teleop" name="neo_teleop_node" ns="neo_teleop" output="screen">
+
+	</node>
+
+	<!-- run joystick -->
+	<node pkg="joy" type="joy_node" name="joy_node">
+		<param name="dev" type="string" value="/dev/input/js0" />
+		<param name="deadzone" value="0.12" />
+	</node>
+
+</launch>
