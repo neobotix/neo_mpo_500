@@ -1,69 +1,191 @@
-#Parameters for Relayboard
+################################################################
+################################################################
+#                                                              #
+#          .yaml for Neobotix RelayBoardV2                     #
+#                                                              #
+################################################################
+################################################################
 
-#Device on which relayboard is attached
-ComPort: /dev/ttyUSB1
-relayboard_timeout: 2.0
-requestRate: 25
+################################################
+#            device configuration              #
+################################################
+port: /dev/ttyUSB1
+message_timeout: 2.0
+request_rate: 25
 
-#Define the version of the protocol used by the Relayboard (the type of lcd interface)
-protocol_version: 2
+#################################################
+#                 battery                       #
+#################################################
+# chemestry: 1 = POWER_SUPPLY_TECHNOLOGY_NIMH
+#            2 = POWER_SUPPLY_TECHNOLOGY_LION
+#            3 = POWER_SUPPLY_TECHNOLOGY_LIPO
+#            4 = POWER_SUPPLY_TECHNOLOGY_LIFE
+#            5 = POWER_SUPPLY_TECHNOLOGY_NICD
+#            6 = POWER_SUPPLY_TECHNOLOGY_LIMN
 
-#relayboard
-hasIOBoard: 0
-hasUSBoard: 0
+# design_capacity: [Ah]
+
+battery:
+  serial_number: neobattery1
+  locaion: slot1
+  design_capacity: 100
+  chemistry: 1
+
+
+#################################################
+#           additional hardware                 #
+#################################################
+ioboard:
+  active: false
+
+usboard:
+  active: false
+  sensor1_active: false
+  sensor2_active: false
+  sensor3_active: false
+  sensor4_active: false
+  sensor5_active: false
+  sensor6_active: false
+  sensor7_active: false
+  sensor8_active: false
+  sensor9_active: false
+  sensor10_active: false
+  sensor11_active: false
+  sensor12_active: false
+  sensor13_active: false
+  sensor14_active: false
+  sensor15_active: false
+  sensor16_active: false
+
+#################################################
+#               logging                         #
+#################################################
+log: false
+
+#################################################
+#              motor configuration              #
+#################################################
+#	mp_400: 	drive 2 and drive 3 should be active
+#	mpo_500: 	drive 2, drive 3, drive 4 and drive 5 should be active
+#	mpo_700:	with cob_packages all drive should be deactivated
+#			without cob_packages all drives should be activated
 
 drive2:
-  motor_active: 1
-  homing_active: 0
+  motor_active: true
+  homing_active: false
   EncIncrPerRevMot: 10000
   VelMeasFrqHz: 1
   GearRatio: 25
   BeltRatio: 1
   Sign: -1.0
   VelMaxEncIncrS: 300000
-  AccIncrS: 500000
-  DecIncrS: 500000
   VelPModeEncIncrS: 10
-  CANId: 2
+  AccIncrS2: 500000
+  DecIncrS2: 500000
+  Modulo: 1000000
+  joint_name: wheel_front_left_joint
 
 drive3:
-  motor_active: 1
-  homing_active: 0
+  motor_active: true
+  homing_active: false
   EncIncrPerRevMot: 10000
   VelMeasFrqHz: 1
   GearRatio: 25
   BeltRatio: 1
   Sign: -1.0
   VelMaxEncIncrS: 300000
-  AccIncrS: 500000
-  DecIncrS: 500000
   VelPModeEncIncrS: 10
-  CANId: 3
+  AccIncrS2: 500000
+  DecIncrS2: 500000
+  Modulo: 1000000
+  joint_name: wheel_front_right_joint
 
 drive4:
-  motor_active: 1
-  homing_active: 0
+  motor_active: true
+  homing_active: false
   EncIncrPerRevMot: 10000
   VelMeasFrqHz: 1
   GearRatio: 25
   BeltRatio: 1
-  Sign: -1.0
+  Sign: 1.0
   VelMaxEncIncrS: 300000
-  AccIncrS: 500000
-  DecIncrS: 500000
   VelPModeEncIncrS: 10
-  CANId: 4
+  AccIncrS2: 500000
+  DecIncrS2: 500000
+  Modulo: 1000000
+  joint_name: deactivated 
 
 drive5:
-  motor_active: 1
-  homing_active: 0
+  motor_active: true
+  homing_active: false
   EncIncrPerRevMot: 10000
   VelMeasFrqHz: 1
   GearRatio: 25
   BeltRatio: 1
   Sign: -1.0
   VelMaxEncIncrS: 300000
-  AccIncrS: 500000
-  DecIncrS: 500000
   VelPModeEncIncrS: 10
-  CANId: 5
+  AccIncrS2: 500000
+  DecIncrS2: 500000
+  Modulo: 1000000
+  joint_name: deactivated
+
+drive6:
+  motor_active: false
+  homing_active: false
+  EncIncrPerRevMot: 4096
+  VelMeasFrqHz: 1
+  GearRatio: 25
+  BeltRatio: 1
+  Sign: 1.0
+  VelMaxEncIncrS: 300000
+  VelPModeEncIncrS: 10
+  AccIncrS2: 500000
+  DecIncrS2: 500000
+  Modulo: 1000000
+  joint_name: deactivated
+
+drive7:
+  motor_active: false
+  homing_active: false
+  EncIncrPerRevMot: 4096
+  VelMeasFrqHz: 1
+  GearRatio: 25
+  BeltRatio: 1
+  Sign: -1.0
+  VelMaxEncIncrS: 300000
+  VelPModeEncIncrS: 10
+  AccIncrS2: 500000
+  DecIncrS2: 500000
+  Modulo: 1000000
+  joint_name: deactivated
+
+drive8:
+  motor_active: false
+  homing_active: false
+  EncIncrPerRevMot: 4096
+  VelMeasFrqHz: 1
+  GearRatio: 25
+  BeltRatio: 1
+  Sign: 1.0
+  VelMaxEncIncrS: 300000
+  VelPModeEncIncrS: 10
+  AccIncrS2: 500000
+  DecIncrS2: 500000
+  Modulo: 1000000
+  joint_name: deactivated 
+
+drive9:
+  motor_active: false
+  homing_active: false
+  EncIncrPerRevMot: 4096
+  VelMeasFrqHz: 1
+  GearRatio: 25
+  BeltRatio: 1
+  Sign: -1.0
+  VelMaxEncIncrS: 300000
+  VelPModeEncIncrS: 10
+  AccIncrS2: 500000
+  DecIncrS2: 500000
+  Modulo: 1000000
+  joint_name: deactivated
