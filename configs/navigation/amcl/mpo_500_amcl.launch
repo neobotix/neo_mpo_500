@@ -2,7 +2,7 @@
 
 <launch>
 
-  <arg name="env_map" default="$(find neo_mpo_500)/configs/navigation/gmapping/maps/$(env MAP_NAME).yaml" />
+  <arg name="env_map" default="$(find neo_mpo_500)/configs/navigation/maps/$(env MAP_NAME).yaml" />
 
   <!-- MAP SERVER -->
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg env_map)">
