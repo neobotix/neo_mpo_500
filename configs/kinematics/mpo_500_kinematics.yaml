@@ -1,7 +1,7 @@
 #robot's geometric parameters:
 
 kinematics: Mecanum4W
-wheelDiameter: 0.25
+wheelDiameter: 0.254
 robotLength: 0.5
-robotWidth: 0.58
+robotWidth: 0.548
 

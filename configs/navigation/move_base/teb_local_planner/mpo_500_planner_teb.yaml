@@ -2,7 +2,7 @@ TebLocalPlannerROS:
 
 #Robot configuration 
 
- acc_lim_x : 0.4
+ acc_lim_x : 0.2
 
     #Maximum translational acceleration of the robot in meters/sec^2 
 
@@ -10,15 +10,15 @@ TebLocalPlannerROS:
 
     #Maximum angular acceleration of the robot in radians/sec^2 
 
- max_vel_x : 0.8
+ max_vel_x : 0.4
 
     #Maximum translational velocity of the robot in meters/sec 
 
- max_vel_x_backwards : 0.8
+ max_vel_x_backwards : 0.25
 
     #Maximum absolute translational velocity of the robot while driving backwards in meters/sec. See optimization parameter weight_kinematics_forward_drive 
 
- max_vel_theta : 0.8
+ max_vel_theta : 0.25
 
     #Maximum angular velocity of the robot in radians/sec 
 
@@ -38,9 +38,9 @@ TebLocalPlannerROS:
 
 ###For Holonomic robots
 
- max_vel_y : 0.8
+ max_vel_y : 0.25
 
- acc_lim_y : 0.4
+ acc_lim_y : 0.25
  
  footprint_model/type : "line"
 
@@ -82,13 +82,17 @@ TebLocalPlannerROS:
 
  exact_arc_length : true
 
- max_global_plan_lookahead_dist : 2
+ max_global_plan_lookahead_dist : 1
 
 #Obstacle Parameters
 
  min_obstacle_dist : 0.55 
 
     #Minimum desired separation from obstacles in meters 
+
+ no_inner_iterations : 7
+ 
+ no_outer_iterations : 6
 
  include_costmap_obstacles : true  
 
@@ -116,7 +120,7 @@ TebLocalPlannerROS:
 
  Weight_acc_lim_y : 0
 
- weight_kinematics_nh : 1 # WE HAVE A HOLONOMIC ROBOT, JUST ADD A SMALL PENALTY
+ weight_kinematics_nh : 1 
 
  weight_kinematics_forward_drive : 1
 

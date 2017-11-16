@@ -9,5 +9,7 @@ local_costmap:
   max_obstacle_height: 8.0
   width: 5
   height: 5
-  resolution: 0.05
-  transfrom_tolerance: 1.5
+  resolution: 0.1
+  transfrom_tolerance: 0.5
+  inflation_radius: 0.6
+  cost_scaling_factor: 1.0
