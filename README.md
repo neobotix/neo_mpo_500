@@ -54,11 +54,13 @@ AMCL: ![amcl](http://wiki.ros.org/amcl)
 
 ## Usage:
 
-1. edit the configuration of each ROS-Node to our needs 
+1. edit the configuration of each ROS-Node to meet your needs 
 
 2. use the bringup.launch file for basic startup
 
 3. use the navigation.launch file for starting up MoveBase and SLAM or AMCL
+
+4. create your own .launch file
 
 ### ROSlaunch files:
 
