@@ -15,6 +15,17 @@ If you have any questions, just get in touch with us:
 
 # Installation
 
+1. Create a catkin workspace (![tutorial](http://wiki.ros.org/catkin/Tutorials/create_a_workspace))
+
+2. download all packages listed under "Additionally required Neobotix-ROS-Packages" into your workspace
+
+3. IMPORTANT! delete all not used packages downloaded in step 2!
+
+4. install all packages listed under "Additionally required thid party ROS-Packages"
+
+5. build your workspace
+
+
 ## Additionally required Neobotix-ROS-Packages:
 
 Hardware connection: ![neo_relayboard_v2](https://github.com/neobotix/neo_relayboard_v2)
@@ -43,11 +54,15 @@ AMCL: ![amcl](http://wiki.ros.org/amcl)
 
 ## Usage:
 
+1. edit the configuration of each ROS-Node to our needs 
+
+2. use the bringup.launch file for basic startup
+
+3. use the navigation.launch file for starting up MoveBase and SLAM or AMCL
+
 ### ROSlaunch files:
 
 Bringup: ![mpo_500_bringup.launch](https://github.com/neobotix/neo_mpo_500/blob/indigo/launch/mpo/mpo_500_bringup.launch)
-
-
 
 Navigation ![mpo_500_nav.launch](https://github.com/neobotix/neo_mpo_500/blob/indigo/launch/mpo/mpo_500_nav.launch)
 
