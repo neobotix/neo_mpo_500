@@ -19,23 +19,42 @@ If you have any questions, just get in touch with us:
 
 Hardware connection: ![neo_relayboard_v2](https://github.com/neobotix/neo_relayboard_v2)
 
-Kinematic: ![neo-mecanum-kinematics](https://github.com/neobotix/neo_kinematics_mecanum)
+Kinematic: ![neo_mecanum_kinematics](https://github.com/neobotix/neo_kinematics_mecanum)
 
 Laserscanner: ![cob_sick_s300](https://github.com/neobotix/neo_driver)
 
 Scan-Merge: ![cob_scan_unifier](https://github.com/neobotix/neo_driver)
 
+Teleoperation: ![neo_teleop](https://github.com/neobotix/neo_control)
+
 Msgs: ![neo_msgs](https://github.com/neobotix/neo_msgs)
 
 Srvs: ![neo_srvs](https://github.com/neobotix/neo_srvs)
 
-## Usage
+## Additionally required thid party ROS-Packages:
 
-### ROSlaunch files
+Joystick: ![joy](http://wiki.ros.org/joy)
+
+MoveBase: ![move_base](http://wiki.ros.org/move_base) and ![move_base_msgs](http://wiki.ros.org/move_base)
+
+SLAM: ![gmapping](http://wiki.ros.org/gmapping)
+
+AMCL: ![amcl](http://wiki.ros.org/amcl)
+
+## Usage:
+
+### ROSlaunch files:
 
 Bringup: ![mpo_500_bringup.launch](https://github.com/neobotix/neo_mpo_500/blob/indigo/launch/mpo/mpo_500_bringup.launch)
 
-### Configuration
+
+
+Navigation ![mpo_500_nav.launch](https://github.com/neobotix/neo_mpo_500/blob/indigo/launch/mpo/mpo_500_nav.launch)
+
+
+### Configuration:
+
+For each used ROS-Node there is a Folder in configs
 
 
 
