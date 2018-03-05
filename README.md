@@ -17,13 +17,13 @@ If you have any questions, just get in touch with us:
 
 1. Create a catkin workspace (![tutorial](http://wiki.ros.org/catkin/Tutorials/create_a_workspace))
 
-2. download all packages listed under "Additionally required Neobotix-ROS-Packages" into your workspace
+2. Download all packages listed under "Additionally required Neobotix-ROS-Packages" into your workspace
 
-3. IMPORTANT! delete all not used packages downloaded in step 2!
+3. IMPORTANT! Delete all not used packages downloaded in step 2!
 
-4. install all packages listed under "Additionally required thid party ROS-Packages"
+4. Install all packages listed under "Additionally required thid party ROS-Packages"
 
-5. build your workspace
+5. Build your workspace
 
 
 ## Additionally required Neobotix-ROS-Packages:
@@ -54,13 +54,13 @@ AMCL: ![amcl](http://wiki.ros.org/amcl)
 
 ## Usage:
 
-1. edit the configuration of each ROS-Node to meet your needs 
+1. Edit the configuration of each ROS-Node to meet your needs 
 
-2. use the bringup.launch file for basic startup
+2. Use the bringup.launch file for basic startup
 
-3. use the navigation.launch file for starting up MoveBase and SLAM or AMCL
+3. Use the navigation.launch file for starting up MoveBase and SLAM or AMCL
 
-4. create your own .launch file
+4. Create your own .launch file
 
 ### ROSlaunch files:
 
