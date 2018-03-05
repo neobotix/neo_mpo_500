@@ -13,6 +13,29 @@ If you have any questions, just get in touch with us:
 * General information: http://www.neobotix-robots.com/company-contact.html
 * ROS related questions: ros@neobotix.de
 
-# Coming Soon
+# Installation
+
+## Additionally required Neobotix-ROS-Packages:
+
+Hardware connection: ![neo_relayboard_v2](https://github.com/neobotix/neo_relayboard_v2)
+
+Kinematic: ![neo-mecanum-kinematics](https://github.com/neobotix/neo_kinematics_mecanum)
+
+Laserscanner: ![cob_sick_s300](https://github.com/neobotix/neo_driver)
+
+Scan-Merge: ![cob_scan_unifier](https://github.com/neobotix/neo_driver)
+
+Msgs: ![neo_msgs](https://github.com/neobotix/neo_msgs)
+
+Srvs: ![neo_srvs](https://github.com/neobotix/neo_srvs)
+
+## Usage
+
+### ROSlaunch files
+
+Bringup: ![mpo_500_bringup.launch](https://github.com/neobotix/neo_mpo_500/blob/indigo/launch/mpo/mpo_500_bringup.launch)
+
+### Configuration
+
 
 
