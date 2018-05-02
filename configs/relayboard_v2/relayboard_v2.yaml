@@ -9,7 +9,7 @@
 ################################################
 #            device configuration              #
 ################################################
-port: /dev/ttyUSB1
+port: /dev/neo-relayboard
 message_timeout: 2.0
 request_rate: 25
 
