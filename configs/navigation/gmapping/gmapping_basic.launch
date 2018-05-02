@@ -3,7 +3,7 @@
 
   <node pkg="gmapping" name="slam_gmapping" type="slam_gmapping" output="screen">
     <remap from="scan" to="cob_scan_unifier/scan_unified"/>
-    <rosparam file="$(find neo_mpo_500)/configs/navigation/gmapping/mpo_500_gmapping.yaml" command="load" />
+    <rosparam file="$(find neo_mpo_500)/configs/navigation/gmapping/gmapping_basic.yaml" command="load" />
   </node>
 
 </launch>

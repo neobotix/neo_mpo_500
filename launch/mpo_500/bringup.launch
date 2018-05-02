@@ -3,12 +3,12 @@
 <launch>
 
 		<!--robot platform-->
-		<include file="$(find neo_mpo_500)/configs/relayboard_v2/neo_relayboard_v2.launch"/>
+		<include file="$(find neo_mpo_500)/configs/relayboard_v2/relayboard_v2.launch"/>
 
-		<include file="$(find neo_mpo_500)/configs/kinematics/mpo_500_kinematics.launch"/> 
+		<include file="$(find neo_mpo_500)/configs/kinematics/kinematics.launch"/> 
 
 		<!--sensors-->
-		<include file="$(find neo_mpo_500)/configs/sick/sick_s300.launch"/>
+		<include file="$(find neo_mpo_500)/configs/sick/sick_s300_front_back.launch"/>
 
 		<include file="$(find neo_mpo_500)/configs/teleop/teleop.launch"/>
 
