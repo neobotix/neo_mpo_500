@@ -2,6 +2,6 @@
 
 <launch>
 
-	<include file="$(find neo_mpo_700)/configs/navigation/move_base/teb_local_planner/mp_700_movebase_teb.launch"/>
+	<include file="$(find neo_mpo_500)/configs/navigation/move_base/teb_local_planner/teb_planner.launch"/>
 
 </launch>
