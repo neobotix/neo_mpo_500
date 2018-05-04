@@ -21,7 +21,7 @@ If you have any questions, just get in touch with us:
 
 3. IMPORTANT! Delete all not used packages downloaded in step 2!
 
-4. Install all packages listed under "Additionally required thid party ROS-Packages"
+4. Install all packages listed under "Additionally required third party ROS-Packages"
 
 5. Build your workspace
 
@@ -42,7 +42,7 @@ Msgs: ![neo_msgs](https://github.com/neobotix/neo_msgs)
 
 Srvs: ![neo_srvs](https://github.com/neobotix/neo_srvs)
 
-## Additionally required thid party ROS-Packages:
+## Additionally required third party ROS-Packages:
 
 Joystick: ![joy](http://wiki.ros.org/joy)
 
