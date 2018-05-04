@@ -48,6 +48,10 @@ Joystick: ![joy](http://wiki.ros.org/joy)
 
 MoveBase: ![move_base](http://wiki.ros.org/move_base) and ![move_base_msgs](http://wiki.ros.org/move_base)
 
+Teb Local Planner: ![teb_local_planner](http://wiki.ros.org/teb_local_planner)
+
+Eband Local Planner: ![eband_local_planner](http://wiki.ros.org/eband_local_planner)
+
 SLAM: ![gmapping](http://wiki.ros.org/gmapping)
 
 AMCL: ![amcl](http://wiki.ros.org/amcl)
