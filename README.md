@@ -44,17 +44,17 @@ Srvs: ![neo_srvs](https://github.com/neobotix/neo_srvs)
 
 ## Additionally required third party ROS-Packages:
 
-Joystick: ![joy](http://wiki.ros.org/joy)
+Joystick: [joy](http://wiki.ros.org/joy)
 
-MoveBase: ![move_base](http://wiki.ros.org/move_base) and ![move_base_msgs](http://wiki.ros.org/move_base)
+MoveBase: [move_base](http://wiki.ros.org/move_base) and ![move_base_msgs](http://wiki.ros.org/move_base)
 
-Teb Local Planner: ![teb_local_planner](http://wiki.ros.org/teb_local_planner)
+Teb Local Planner: [teb_local_planner](http://wiki.ros.org/teb_local_planner)
 
-Eband Local Planner: ![eband_local_planner](http://wiki.ros.org/eband_local_planner)
+Eband Local Planner: [eband_local_planner](http://wiki.ros.org/eband_local_planner)
 
-SLAM: ![gmapping](http://wiki.ros.org/gmapping)
+SLAM: [gmapping](http://wiki.ros.org/gmapping)
 
-AMCL: ![amcl](http://wiki.ros.org/amcl)
+AMCL: [amcl](http://wiki.ros.org/amcl)
 
 ## Usage:
 
@@ -68,9 +68,11 @@ AMCL: ![amcl](http://wiki.ros.org/amcl)
 
 ### ROSlaunch files:
 
-Bringup: ![mpo_500_bringup.launch](https://github.com/neobotix/neo_mpo_500/blob/indigo/launch/mpo/mpo_500_bringup.launch)
+Bringup: ![mpo_500_bringup.launch](https://github.com/neobotix/neo_mpo_500/blob/indigo/launch/mpo_500/bringup.launch)
 
-Navigation ![mpo_500_nav.launch](https://github.com/neobotix/neo_mpo_500/blob/indigo/launch/mpo/mpo_500_nav.launch)
+Navigation with SLAM: ![navigation_basic_slam.launch](https://github.com/neobotix/neo_mpo_500/blob/indigo/launch/mpo_500/navigation_basic_slam.launch)
+
+Navigation with AMCL: ![navigation_basic_amcl.launch](https://github.com/neobotix/neo_mpo_500/blob/indigo/launch/mpo_500/navigation_basic_amcl.launch)
 
 
 ### Configuration:
