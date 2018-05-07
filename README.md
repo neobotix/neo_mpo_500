@@ -46,7 +46,7 @@ Srvs: ![neo_srvs](https://github.com/neobotix/neo_srvs)
 
 Joystick: [joy](http://wiki.ros.org/joy)
 
-MoveBase: [move_base](http://wiki.ros.org/move_base) and ![move_base_msgs](http://wiki.ros.org/move_base)
+MoveBase: [move_base](http://wiki.ros.org/move_base) and [move_base_msgs](http://wiki.ros.org/move_base)
 
 Teb Local Planner: [teb_local_planner](http://wiki.ros.org/teb_local_planner)
 
@@ -68,7 +68,7 @@ AMCL: [amcl](http://wiki.ros.org/amcl)
 
 ### ROSlaunch files:
 
-Bringup: ![mpo_500_bringup.launch](https://github.com/neobotix/neo_mpo_500/blob/indigo/launch/mpo_500/bringup.launch)
+Bringup: ![bringup.launch](https://github.com/neobotix/neo_mpo_500/blob/indigo/launch/mpo_500/bringup.launch)
 
 Navigation with SLAM: ![navigation_basic_slam.launch](https://github.com/neobotix/neo_mpo_500/blob/indigo/launch/mpo_500/navigation_basic_slam.launch)
 
