@@ -3,6 +3,6 @@
 <launch>
 
         <include file="$(find neo_mpo_500)/configs/navigation/amcl/amcl_basic.launch"/>
-        <include file="$(find neo_mpo_500)/configs/navigation/move_base/teb_local_planner/teb_planner.launch"/>
+        <include file="$(find neo_mpo_500)/configs/navigation/move_base/eband_local_planner/eband_planner.launch"/>
 
 </launch>

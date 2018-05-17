@@ -4,10 +4,10 @@
 
   odom_frame : "odom"
 
-  map_update_interval   : 1.0
+  map_update_interval   : 0.5
   # How long (in seconds) between updates to the map. Lowering this number updates the occupancy grid more often, at the expense of greater computational load.
 
-  maxUrange : 80
+  maxUrange : 20
   # The maximum usable range of the laser. A beam is cropped to this value. 
 
   sigma : 0.05
@@ -49,10 +49,10 @@
   #stt : 0.2
   #Odometry error in rotation as a function of rotation (theta/theta) 
 
-  linearUpdate : 0.2
+  linearUpdate : 0.1
   #Process a scan each time the robot translates this far 
 
-  angularUpdate : 0.3
+  angularUpdate : 0.05
   #Process a scan each time the robot rotates this far 
 
   temporalUpdate : -1.0
@@ -61,7 +61,7 @@
   #resampleThreshold : 0.5
   #The Neff based resampling threshold 
 
-  particles : 50
+  particles : 100
   #Number of particles in the filter. Particles changed from default value 30 to 80. 
 
   #xmin : -100.0

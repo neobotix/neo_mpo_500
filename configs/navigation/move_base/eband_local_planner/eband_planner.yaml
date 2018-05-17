@@ -3,10 +3,10 @@ EBandPlannerROS:
   costmap_weight : 5.0
   Ctrl_Rate : 10.0
   differential_drive : true
-  max_acceleration : 0.6
-  max_rotational_acceleration : 1.5
-  max_vel_lin : 0.8
-  max_vel_th : 1.0
+  max_acceleration : 0.3
+  max_rotational_acceleration : 0.3
+  max_vel_lin : 0.6
+  max_vel_th : 0.6
   min_vel_lin : 0.0
   min_vel_th : 0.0
   xy_goal_tolerance : 0.1
