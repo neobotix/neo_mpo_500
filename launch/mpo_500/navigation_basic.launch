@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-
-<launch>
-
-	<include file="$(find neo_mpo_500)/configs/navigation/move_base/teb_local_planner/teb_planner.launch"/>
-
-</launch>
