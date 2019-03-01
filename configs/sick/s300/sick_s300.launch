@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<launch>
+<!-- front laserscanner   -->
+
+	<!-- parameters -->
+	<arg name="name_1" default="laser_1" />
+        <rosparam command="load" ns="$(arg name_1)" file="$(find neo_mpo_700)/configs/sick/s300/s300_1.yaml"/>
+	<!-- start node -->
+	<node pkg="cob_sick_s300" type="cob_sick_s300" name="$(arg name_1)" respawn="false" output="screen" >
+	</node>
+	<!--start filter node-->
+	<node pkg="cob_sick_s300" ns="$(arg name_1)" type="cob_scan_filter" name="$(arg name_1)_filter" respawn="false" output="screen" >
+	</node>
+
+<!-- BACK laserscanner   -->
+
+	<!-- parameters -->
+	<arg name="name_2" default="laser_2" />
+        <rosparam command="load" ns="$(arg name_2)" file="$(find neo_mpo_700)/configs/sick/s300/s300_2.yaml"/>
+	<!-- start node -->
+	<node pkg="cob_sick_s300" type="cob_sick_s300" name="$(arg name_2)" respawn="false" output="screen" >
+	</node>
+	<!--start filter node-->
+	<node pkg="cob_sick_s300" ns="$(arg name_2)" type="cob_scan_filter" name="$(arg name_2)_filter" respawn="false" output="screen" >
+	</node>
+
+</launch>

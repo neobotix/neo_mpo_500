@@ -1,6 +1,0 @@
-port: /dev/neo-s300-2
-baud: 500000
-inverted: false
-frame_id: /sick_s300_laser_back_link
-scan_id: 9
-scan_intervals: [[-1.919862177, 1.919862177]] #[rad] these intervals are included to the scan 110°
