@@ -4,7 +4,7 @@
 
 	<!-- parameters -->
 	<arg name="name_1" default="laser_1" />
-        <rosparam command="load" ns="$(arg name_1)" file="$(find neo_mpo_700)/configs/sick/s300/s300_1.yaml"/>
+        <rosparam command="load" ns="$(arg name_1)" file="$(find neo_mpo_500)/configs/sick/s300/s300_1.yaml"/>
 	<!-- start node -->
 	<node pkg="cob_sick_s300" type="cob_sick_s300" name="$(arg name_1)" respawn="false" output="screen" >
 	</node>
@@ -16,7 +16,7 @@
 
 	<!-- parameters -->
 	<arg name="name_2" default="laser_2" />
-        <rosparam command="load" ns="$(arg name_2)" file="$(find neo_mpo_700)/configs/sick/s300/s300_2.yaml"/>
+        <rosparam command="load" ns="$(arg name_2)" file="$(find neo_mpo_500)/configs/sick/s300/s300_2.yaml"/>
 	<!-- start node -->
 	<node pkg="cob_sick_s300" type="cob_sick_s300" name="$(arg name_2)" respawn="false" output="screen" >
 	</node>

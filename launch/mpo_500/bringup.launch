@@ -8,7 +8,7 @@
 		<include file="$(find neo_mpo_500)/configs/kinematics/kinematics.launch"/> 
 
 		<!--sensors-->
-		<include file="$(find neo_mpo_500)/configs/sick/sick_s300.launch"/>
+		<include file="$(find neo_mpo_500)/configs/sick/s300/sick_s300.launch"/>
 
 		<include file="$(find neo_mpo_500)/configs/teleop/teleop.launch"/>
 

@@ -73,119 +73,59 @@ log: false
 drive2:
   motor_active: true
   homing_active: false
-  EncIncrPerRevMot: 4096
+  EncIncrPerRevMot: 10000
   VelMeasFrqHz: 1
   GearRatio: 25
   BeltRatio: 1
   Sign: 1.0
-  VelMaxEncIncrS: 300000
+  VelMaxEncIncrS: 800000
   VelPModeEncIncrS: 10
-  AccIncrS2: 500000
-  DecIncrS2: 500000
+  AccIncrS2: 1000000
+  DecIncrS2: 1000000
   Modulo: 1000000
   joint_name: wheel_front_left_joint
 
 drive3:
   motor_active: true
   homing_active: false
-  EncIncrPerRevMot: 4096
+  EncIncrPerRevMot: 10000
   VelMeasFrqHz: 1
   GearRatio: 25
   BeltRatio: 1
   Sign: -1.0
-  VelMaxEncIncrS: 300000
+  VelMaxEncIncrS: 800000
   VelPModeEncIncrS: 10
-  AccIncrS2: 500000
-  DecIncrS2: 500000
+  AccIncrS2: 1000000
+  DecIncrS2: 1000000
   Modulo: 1000000
   joint_name: wheel_front_right_joint
 
 drive4:
   motor_active: true
   homing_active: false
-  EncIncrPerRevMot: 4096
+  EncIncrPerRevMot: 10000
   VelMeasFrqHz: 1
   GearRatio: 25
   BeltRatio: 1
   Sign: 1.0
-  VelMaxEncIncrS: 300000
+  VelMaxEncIncrS: 800000
   VelPModeEncIncrS: 10
-  AccIncrS2: 500000
-  DecIncrS2: 500000
+  AccIncrS2: 1000000
+  DecIncrS2: 1000000
   Modulo: 1000000
   joint_name: wheel_back_left_joint 
 
 drive5:
   motor_active: true
   homing_active: false
-  EncIncrPerRevMot: 4096
+  EncIncrPerRevMot: 10000
   VelMeasFrqHz: 1
   GearRatio: 25
   BeltRatio: 1
   Sign: -1.0
-  VelMaxEncIncrS: 300000
+  VelMaxEncIncrS: 800000
   VelPModeEncIncrS: 10
-  AccIncrS2: 500000
-  DecIncrS2: 500000
+  AccIncrS2: 1000000
+  DecIncrS2: 1000000
   Modulo: 1000000
   joint_name: wheel_back_right_joint
-
-drive6:
-  motor_active: false
-  homing_active: false
-  EncIncrPerRevMot: 4096
-  VelMeasFrqHz: 1
-  GearRatio: 25
-  BeltRatio: 1
-  Sign: 1.0
-  VelMaxEncIncrS: 300000
-  VelPModeEncIncrS: 10
-  AccIncrS2: 500000
-  DecIncrS2: 500000
-  Modulo: 1000000
-  joint_name: deactivated
-
-drive7:
-  motor_active: false
-  homing_active: false
-  EncIncrPerRevMot: 4096
-  VelMeasFrqHz: 1
-  GearRatio: 25
-  BeltRatio: 1
-  Sign: -1.0
-  VelMaxEncIncrS: 300000
-  VelPModeEncIncrS: 10
-  AccIncrS2: 500000
-  DecIncrS2: 500000
-  Modulo: 1000000
-  joint_name: deactivated
-
-drive8:
-  motor_active: false
-  homing_active: false
-  EncIncrPerRevMot: 4096
-  VelMeasFrqHz: 1
-  GearRatio: 25
-  BeltRatio: 1
-  Sign: 1.0
-  VelMaxEncIncrS: 300000
-  VelPModeEncIncrS: 10
-  AccIncrS2: 500000
-  DecIncrS2: 500000
-  Modulo: 1000000
-  joint_name: deactivated 
-
-drive9:
-  motor_active: false
-  homing_active: false
-  EncIncrPerRevMot: 4096
-  VelMeasFrqHz: 1
-  GearRatio: 25
-  BeltRatio: 1
-  Sign: -1.0
-  VelMaxEncIncrS: 300000
-  VelPModeEncIncrS: 10
-  AccIncrS2: 500000
-  DecIncrS2: 500000
-  Modulo: 1000000
-  joint_name: deactivated
