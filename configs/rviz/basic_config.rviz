@@ -7,6 +7,7 @@ Panels:
         - /Global Options1
         - /Status1
         - /TF1/Frames1
+        - /Lidar_21
       Splitter Ratio: 0.5
     Tree Height: 775
   - Class: rviz/Selection
@@ -27,7 +28,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: LaserScan
+    SyncSource: Lidar_1
 Visualization Manager:
   Class: ""
   Displays:
@@ -83,6 +84,11 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        laser_2_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         wheel_back_left_link:
           Alpha: 1
           Show Axes: false
@@ -118,7 +124,7 @@ Visualization Manager:
       Axis: Z
       Channel Name: intensity
       Class: rviz/LaserScan
-      Color: 0; 170; 0
+      Color: 65; 170; 16
       Color Transformer: FlatColor
       Decay Time: 0
       Enabled: true
@@ -127,14 +133,44 @@ Visualization Manager:
       Max Intensity: 0
       Min Color: 0; 0; 0
       Min Intensity: 0
-      Name: LaserScan
+      Name: Lidar_1
       Position Transformer: XYZ
       Queue Size: 10
       Selectable: true
       Size (Pixels): 3
-      Size (m): 0.0500000007
+      Size (m): 0.0199999996
       Style: Boxes
       Topic: /laser_1/scan_filtered
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/LaserScan
+      Color: 255; 224; 47
+      Color Transformer: FlatColor
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 0
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: Lidar_2
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.0199999996
+      Style: Boxes
+      Topic: /laser_2/scan_filtered
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
@@ -164,7 +200,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 3.59251952
+      Distance: 13.161335
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
@@ -179,10 +215,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.369797468
+      Pitch: 1.06479323
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 1.15677106
+      Yaw: 1.86176157
     Saved: ~
 Window Geometry:
   Displays:
