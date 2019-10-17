@@ -2,7 +2,7 @@
 <launch>
 
   <node pkg="gmapping" name="slam_gmapping" type="slam_gmapping" output="screen">
-    <remap from="scan" to="laser_1/scan_filtered"/>
+    <remap from="scan" to="lidar_1/scan_filtered"/>
     <rosparam file="$(find neo_mpo_500)/configs/navigation/gmapping/gmapping_basic.yaml" command="load" />
   </node>
 

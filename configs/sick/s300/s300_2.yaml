@@ -1,6 +1,6 @@
 port: /dev/neo-s300-2
 baud: 500000
 inverted: false
-frame_id: laser_2_link
+frame_id: lidar_2_link
 scan_id: 9
 scan_intervals: [[-1.66, 1.66]] #[rad] these intervals are included to the scan +-95°

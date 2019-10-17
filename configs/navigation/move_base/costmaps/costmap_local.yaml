@@ -5,8 +5,8 @@ local_costmap:
   publish_frequency: 1
   static_map: false
   rolling_window: true
-  max_obstacle_width: 8.0
-  max_obstacle_height: 8.0
+  max_obstacle_width: 3.0
+  max_obstacle_height: 3.0
   width: 3
   height: 3
   resolution: 0.02
