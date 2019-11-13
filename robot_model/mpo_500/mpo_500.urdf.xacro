@@ -2,7 +2,7 @@
 <robot name="mpo_500" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <!--GAZEBO REFERENCES -->
-  <xacro:include filename="$(find neo_mpo_500)/robot_model/mpo_500/xacros/mpo_500_gazebo.xacro" />
+  <!-- <xacro:include filename="$(find neo_mpo_500)/robot_model/mpo_500/xacros/mpo_500_gazebo.xacro" /> -->
 
   <!-- BODY -->
   <xacro:include filename="$(find neo_mpo_500)/robot_model/mpo_500/xacros/mpo_500_body.xacro" />
