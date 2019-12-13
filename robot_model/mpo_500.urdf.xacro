@@ -2,24 +2,24 @@
 <robot name="mpo_500" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <!--GAZEBO REFERENCES -->
-  <!-- <xacro:include filename="$(find neo_mpo_500)/robot_model/mpo_500/xacros/mpo_500_gazebo.xacro" /> -->
+  <!-- <xacro:include filename="$(find neo_mpo_500)/robot_model/xacros/mpo_500_gazebo.xacro" /> -->
 
   <!-- BODY -->
-  <xacro:include filename="$(find neo_mpo_500)/robot_model/mpo_500/xacros/mpo_500_body.xacro" />
+  <xacro:include filename="$(find neo_mpo_500)/robot_model/xacros/mpo_500_body.xacro" />
  
   <!-- WHEELS -->
-  <xacro:include filename="$(find neo_mpo_500)/robot_model/mpo_500/xacros/omni_wheel.xacro" />
+  <xacro:include filename="$(find neo_mpo_500)/robot_model/xacros/omni_wheel.xacro" />
 
   <!-- SENSORS --> 
   <!-- Sick S300 - Comment/Uncomment if required  -->
 
-  <xacro:include filename="$(find neo_mpo_500)/robot_model/mpo_500/xacros/sick_S300.xacro" />
+  <xacro:include filename="$(find neo_mpo_500)/robot_model/xacros/sick_S300.xacro" />
   <!-- Microscan - Comment/Uncomment if required -->
-  <!-- <xacro:include filename="$(find neo_mpo_500)/robot_model/mpo_500/xacros/micro_scan.xacro" />
+  <!-- <xacro:include filename="$(find neo_mpo_500)/robot_model/xacros/micro_scan.xacro" />
 
-  <xacro:include filename="$(find neo_mpo_500)/robot_model/mpo_500/xacros/imu.xacro" />
+  <xacro:include filename="$(find neo_mpo_500)/robot_model/xacros/imu.xacro" />
 
-  <xacro:include filename="$(find neo_mpo_500)/robot_model/mpo_500/xacros/ultrasonic.xacro" />-->
+  <xacro:include filename="$(find neo_mpo_500)/robot_model/xacros/ultrasonic.xacro" />-->
 
 
   <!-- Base Macro-->

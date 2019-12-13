@@ -22,14 +22,14 @@
     <visual>
      <origin xyz="0 0 0" rpy="0 0 0"/>
      <geometry>
-        <mesh filename="package://neo_mpo_500/robot_model/mpo_500/meshes/MPO-500-WHEEL.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://neo_mpo_500/robot_model/meshes/MPO-500-WHEEL.dae" scale="0.001 0.001 0.001"/>
      </geometry>
     </visual>
 
     <collision>
      <origin xyz="0 0 0" rpy="0 0 0" />
      <geometry>
-        <mesh filename="package://neo_mpo_500/robot_model/mpo_500/meshes/MPO-500-WHEEL.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://neo_mpo_500/robot_model/meshes/MPO-500-WHEEL.dae" scale="0.001 0.001 0.001"/>
      </geometry>
     </collision>
    </link>
