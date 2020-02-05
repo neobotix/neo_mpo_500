@@ -23,7 +23,7 @@
     <!-- <param name="serial_number" value="123456"/> -->
 
     # standard deviation for angual velocities, default: 0.000349056
-    <param name="angular_velocity_stdev" value="0.001"/>
+    <param name="angular_velocity_stdev" value="0.632"/>
 
     # standard deviation for linear velocities, default: 0.002943
     <param name="linear_acceleration_stdev" value="0.01"/>

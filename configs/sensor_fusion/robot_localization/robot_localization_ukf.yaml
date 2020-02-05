@@ -33,7 +33,7 @@ print_diagnostics: true
 debug: false
 
 # Defaults to "robot_localization_debug.txt" if unspecified. Please specify the full path.
-debug_out_file: /path/to/debug/file.txt
+debug_out_file: /home/niklas/rbloc_debug.txt
 
 # REP-105 (http://www.ros.org/reps/rep-0105.html) specifies four principal coordinate frames: base_link, odom, map, and
 # earth. base_link is the coordinate frame that is affixed to the robot. Both odom and map are world-fixed frames.

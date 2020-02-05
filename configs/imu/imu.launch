@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!--Phidgets-->
+	<include file="$(find neo_mpo_500)/configs/imu/phidgets/phidgets_imu.launch"/>
+
+</launch>

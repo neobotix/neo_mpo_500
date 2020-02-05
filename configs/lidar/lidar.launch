@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!--SICK S300-->
+	<include file="$(find neo_mpo_500)/configs/lidar/sick/s300/sick_s300.launch"/>
+
+	<!--SICK Microscan3-->
+	<!--include file="$(find neo_mpo_500)/configs/lidar/sick/microscan3/sick_microscan3.launch"/-->
+
+</launch>

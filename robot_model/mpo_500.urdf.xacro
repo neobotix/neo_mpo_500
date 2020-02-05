@@ -15,11 +15,11 @@
 
   <xacro:include filename="$(find neo_mpo_500)/robot_model/xacros/sick_S300.xacro" />
   <!-- Microscan - Comment/Uncomment if required -->
-  <!-- <xacro:include filename="$(find neo_mpo_500)/robot_model/xacros/micro_scan.xacro" />
+  <xacro:include filename="$(find neo_mpo_500)/robot_model/xacros/micro_scan.xacro" />
 
   <xacro:include filename="$(find neo_mpo_500)/robot_model/xacros/imu.xacro" />
 
-  <xacro:include filename="$(find neo_mpo_500)/robot_model/xacros/ultrasonic.xacro" />-->
+  <xacro:include filename="$(find neo_mpo_500)/robot_model/xacros/ultrasonic.xacro" />
 
 
   <!-- Base Macro-->
@@ -54,9 +54,9 @@
 
        <!--+++++++++++++++++++ IMU ++++++++++++++++++++++++-->
  <!-- Comment or uncomment based on your requirement -->
-<!--   <xacro:imu name="imu_1" parent="base_link">
-    <origin xyz="0.100 0 0.300" rpy="0 0 3.14" />
-  </xacro:imu> -->
+  <!--xacro:imu name="imu_1" parent="base_link">
+    <origin xyz="0.100 0 0.300" rpy="0 3.14 3.14" />
+  </xacro:imu-->
 
   <!--+++++++++++++++++++ Ultra Sonic ++++++++++++++++++++++++-->
   <!-- Comment or uncomment based on your requirement -->
