@@ -22,7 +22,7 @@ NeoLocalPlanner:
   min_vel_y : -0.5
 
   # The absolute value of the maximum rotational velocity for the robot in rad/s
-  max_rot_vel : 1
+  max_rot_vel : 0.8
 
   # The absolute value of the minimum rotational velocity for the robot in rad/s
   min_rot_vel : 0.1
@@ -91,7 +91,7 @@ NeoLocalPlanner:
   max_backup_dist : 0
 
   # Minimal distance for stopping [m]
-  min_stop_dist : 0.2
+  min_stop_dist : 0.4
 
   # If robot has differential drive, holonomic otherwise
   differential_drive : false
