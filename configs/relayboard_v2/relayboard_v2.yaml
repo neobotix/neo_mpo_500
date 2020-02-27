@@ -73,7 +73,7 @@ log: false
 drive2:
   motor_active: true
   homing_active: false
-  EncIncrPerRevMot: 10000
+  EncIncrPerRevMot: 4096
   VelMeasFrqHz: 1
   GearRatio: 25
   BeltRatio: 1
@@ -88,7 +88,7 @@ drive2:
 drive3:
   motor_active: true
   homing_active: false
-  EncIncrPerRevMot: 10000
+  EncIncrPerRevMot: 4096
   VelMeasFrqHz: 1
   GearRatio: 25
   BeltRatio: 1
@@ -103,7 +103,7 @@ drive3:
 drive4:
   motor_active: true
   homing_active: false
-  EncIncrPerRevMot: 10000
+  EncIncrPerRevMot: 4096
   VelMeasFrqHz: 1
   GearRatio: 25
   BeltRatio: 1
@@ -118,7 +118,7 @@ drive4:
 drive5:
   motor_active: true
   homing_active: false
-  EncIncrPerRevMot: 10000
+  EncIncrPerRevMot: 4096
   VelMeasFrqHz: 1
   GearRatio: 25
   BeltRatio: 1
