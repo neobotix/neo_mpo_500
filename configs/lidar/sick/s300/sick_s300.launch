@@ -2,23 +2,23 @@
 <launch>
 <!-- front LiDAR -->
 
-	<!-- parameters -->
-	<arg name="name_1" default="lidar_1" />
+    <!-- parameters -->
+    <arg name="name_1" default="lidar_1" />
     <rosparam command="load" ns="$(arg name_1)" file="$(find neo_mpo_500)/configs/lidar/sick/s300/s300_1.yaml"/>
     <!-- start node -->
-	<node pkg="neo_sick_s300" ns="$(arg name_1)" type="neo_sick_s300_node" name="$(arg name_1)" respawn="false" output="screen" >
-	</node>
+    <node pkg="neo_sick_s300" ns="$(arg name_1)" type="neo_sick_s300_node" name="$(arg name_1)_node" respawn="false" output="screen" >
+    </node>
     <!-- start filter node -->
-	<node pkg="neo_sick_s300" ns="$(arg name_1)" type="neo_scan_filter_node" name="$(arg name_1)_filter" respawn="false" output="screen" >
-	</node>
+    <node pkg="neo_sick_s300" ns="$(arg name_1)" type="neo_scan_filter_node" name="$(arg name_1)_filter" respawn="false" output="screen" >
+    </node>
 
 <!-- back LiDAR -->
 
     <arg name="name_2" default="lidar_2" />
     <rosparam command="load" ns="$(arg name_2)" file="$(find neo_mpo_500)/configs/lidar/sick/s300/s300_2.yaml"/>
-	<node pkg="neo_sick_s300" ns="$(arg name_2)" type="neo_sick_s300_node" name="$(arg name_2)" respawn="false" output="screen" >
-	</node>
-	<node pkg="neo_sick_s300" ns="$(arg name_2)" type="neo_scan_filter_node" name="$(arg name_2)_filter" respawn="false" output="screen" >
-	</node>
+    <node pkg="neo_sick_s300" ns="$(arg name_2)" type="neo_sick_s300_node" name="$(arg name_2)_node" respawn="false" output="screen" >
+    </node>
+    <node pkg="neo_sick_s300" ns="$(arg name_2)" type="neo_scan_filter_node" name="$(arg name_2)_filter" respawn="false" output="screen" >
+    </node>
 
 </launch>
