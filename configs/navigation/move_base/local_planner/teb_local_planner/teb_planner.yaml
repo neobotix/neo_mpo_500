@@ -3,7 +3,7 @@ TebLocalPlannerROS:
 ####################################################
 #Robot Configuration Parameters
 ####################################################
- acc_lim_x: 1.0
+ acc_lim_x: 0.25
  #Maximum translational acceleration of the robot in meters/sec^2 
 
  acc_lim_theta: 0.8
@@ -43,7 +43,7 @@ TebLocalPlannerROS:
 ############################
  max_vel_y: 0.6
 
- acc_lim_y: 1.0
+ acc_lim_y: 0.25
 
  #Set both to 0.0 for nonholonomic
 
@@ -72,7 +72,7 @@ TebLocalPlannerROS:
  min_samples: 3
  #Minimum number of samples
 
- global_plan_overwrite_orientation: false
+ global_plan_overwrite_orientation: true
  #Overwrite orientation of local subgoals provided by the global planner (since they often provide only a 2D path)
 
  global_plan_viapoint_sep: -0.1
