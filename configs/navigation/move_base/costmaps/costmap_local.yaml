@@ -7,9 +7,6 @@ local_costmap:
   rolling_window: true
   max_obstacle_width: 3.0
   max_obstacle_height: 3.0
-  width: 3
-  height: 3
+  width: 5
+  height: 5
   resolution: 0.02
-  transfrom_tolerance: 0.5
-  inflation_radius: 0.6
-  cost_scaling_factor: 1.0

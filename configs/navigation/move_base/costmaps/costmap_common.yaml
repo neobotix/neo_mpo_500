@@ -1,13 +1,16 @@
 footprint: [[0.5,0.4],[-0.5,0.4],[-0.5,-0.4],[0.5,-0.4]]
-inflation_radius: 1.5
-cost_scaling_factor: 15.0
 
-observation_sources: lidar_1 lidar_2 
+inflation_layer:
+  inflation_radius: 1
+  cost_scaling_factor: 5
 
-lidar_1: {sensor_frame: lidar_1_link , data_type: LaserScan, topic: /lidar_1/scan_filtered, marking: true, clearing: true, obstacle_range: 5, raytrace_range: 5}
+transfrom_tolerance: 0.5
 
+observation_sources: lidar_1 lidar_2
 
-lidar_2: {sensor_frame: lidar_2_link , data_type: LaserScan, topic: /lidar_2/scan_filtered, marking: true, clearing: true, obstacle_range: 5, raytrace_range: 5}
+lidar_1: {sensor_frame: lidar_1_link , data_type: LaserScan, topic: /lidar_1/scan_filtered, marking: true, clearing: true, obstacle_range: 5, raytrace_range: 8}
+
+lidar_2: {sensor_frame: lidar_2_link , data_type: LaserScan, topic: /lidar_2/scan_filtered, marking: true, clearing: true, obstacle_range: 5, raytrace_range: 8}
 
 
 
