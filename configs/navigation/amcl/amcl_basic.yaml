@@ -1,9 +1,9 @@
 #######OVERALL FILTER PARAMETER########
 
-min_particles : 800
+min_particles : 500
 #####Minimum allowed number of particles (default:100)
 
-max_particles : 1600
+max_particles : 1250
 #####Maximum allowed number of particles (default:5000)
 
 kld_err : 0.01
@@ -12,10 +12,10 @@ kld_err : 0.01
 kld_z : 0.99
 #####Upper standard normal quantile for (1 - p), where p is the probability that the error on the estimated distrubition will be less than kld_err. 
 
-update_min_d : 0.02
+update_min_d : 0.05
 #####Translational movement required before performing a filter update. (default:0.2)
 
-update_min_a: 0.02
+update_min_a: 0.05
 #####Rotational movement required before performing a filter update. 
 
 resample_interval : 2
@@ -24,10 +24,10 @@ resample_interval : 2
 transform_tolerance : 0.1 
 #####Time with which to post-date the transform that is published, to indicate that this transform is valid into the future. (default:0.1)
 
-recovery_alpha_slow : 0.0001
+#recovery_alpha_slow : 0.0001
 #####Exponential decay rate for the slow average weight filter, used in deciding when to recover by adding random poses. A good value might be 0.001. 
 
-recovery_alpha_fast : 0.1
+#recovery_alpha_fast : 0.1
 #####Exponential decay rate for the fast average weight filter, used in deciding when to recover by adding random poses. A good value might be 0.1. 
 
 initial_pose_x : 0.0 
@@ -39,10 +39,10 @@ initial_pose_y : 0.0
 initial_pose_a : 0.0 
 ####Initial pose mean (yaw), used to initialize filter with Gaussian distribution. 
 
-initial_cov_xx : 0.1
+initial_cov_xx : 0.25
 #####Initial pose covariance (x*x), used to initialize filter with Gaussian distribution. 
 
-initial_cov_yy : 0.1
+initial_cov_yy : 0.25
 #####Initial pose covariance (y*y), used to initialize filter with Gaussian distribution. 
 
 initial_cov_aa : 0.1
@@ -68,28 +68,28 @@ first_map_only : false
 laser_min_range : -1.0
 #####Minimum scan range to be considered; -1.0 will cause the laser's reported minimum range to be used. 
 
-laser_max_range : 10.0
+laser_max_range : -1.0
 #####Maximum scan range to be considered; -1.0 will cause the laser's reported maximum range to be used. 
 
-laser_max_beams : 500
+laser_max_beams : 200
 #####How many evenly-spaced beams in each scan to be used when updating the filter. (Default:30)
 
-laser_z_hit : 0.95
+#laser_z_hit : 0.95
 #####Mixture weight for the z_hit part of the model. 
 
-laser_z_short : 0.1
+#laser_z_short : 0.1
 #####Mixture weight for the z_short part of the model. 
 
-laser_z_max : 0.05
+#laser_z_max : 0.05
 #####Mixture weight for the z_max part of the model. 
 
-laser_z_rand : 0.05
+#laser_z_rand : 0.05
 #####Mixture weight for the z_rand part of the model. 
 
-laser_sigma_hit : 0.2 
+#laser_sigma_hit : 0.2 
 #####Standard deviation for Gaussian model used in z_hit part of the model. 
 
-laser_lambda_short : 0.1
+#laser_lambda_short : 0.1
 #####Exponential decay parameter for z_short part of model. 
 
 laser_likelihood_max_dist : 2.0 
