@@ -1,10 +1,19 @@
+
+# joystick axis mapping
 axis_linear_x: 1
 axis_linear_y: 0
 axis_angular_z: 2
+
+# maximum velocities [rad/s, m/s, m/s]
 scale_angular_z: 0.6
 scale_linear_x: 0.6
 scale_linear_y: 0.6
 
-deadman_button: 5   #button on the controller wich has to be pushed while driving
-timeOut: 0.1        #timeout to stop robot if no command is recived for X seconds and 
-                    #deadman_button is not pushed
+# low pass filter gain (1 = no filtering)
+smooth_factor: 0.2
+
+# button on the controller wich has to be pushed while driving
+deadman_button: 5
+
+# timeout after which to stop robot if no command is received [s]
+joy_timeout: 1
