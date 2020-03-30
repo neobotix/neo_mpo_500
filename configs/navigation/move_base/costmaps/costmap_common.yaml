@@ -4,8 +4,6 @@ inflation_layer:
   inflation_radius: 1
   cost_scaling_factor: 5
 
-transfrom_tolerance: 0.5
-
 observation_sources: lidar_1 lidar_2
 
 lidar_1: {sensor_frame: lidar_1_link , data_type: LaserScan, topic: /lidar_1/scan_filtered, marking: true, clearing: true, obstacle_range: 5, raytrace_range: 8}
