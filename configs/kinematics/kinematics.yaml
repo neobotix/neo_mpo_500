@@ -3,7 +3,7 @@
 #Diameter of std. mecanum wheel
 wheelDiameter: 0.254
 #Length of the mobile robot from wheel center to wheel center
-robotLength: 0.5
+robotLength: 0.475
 #Width from wheel center to wheel center
 robotWidth: 0.548
 #stddev vel x
