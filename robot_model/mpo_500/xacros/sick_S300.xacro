@@ -16,13 +16,13 @@
       <visual>
         <origin xyz="0 0 -0.12" rpy="-1.57 0 3.14" />
         <geometry>
-        <mesh filename="package://neo_mpo_500/robot_model/meshes/SICK-S300.dae" scale="0.001 0.001 0.001" />
+        <mesh filename="package://neo_mpo_500/robot_model/mpo_500/meshes/SICK-S300.dae" scale="0.001 0.001 0.001" />
         </geometry>
       </visual>
       <collision>
         <origin xyz="0 0 -0.12" rpy="-1.57 0 3.14" />
         <geometry>
-        <mesh filename="package://neo_mpo_500/robot_model/meshes/SICK-S300.dae" scale="0.001 0.001 0.001" />
+        <mesh filename="package://neo_mpo_500/robot_model/mpo_500/meshes/SICK-S300.dae" scale="0.001 0.001 0.001" />
         </geometry>
       </collision>
     </link>
