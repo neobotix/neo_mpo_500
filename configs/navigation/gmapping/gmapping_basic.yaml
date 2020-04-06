@@ -7,7 +7,7 @@
   map_update_interval : 1.0
   # How long (in seconds) between updates to the map. Lowering this number updates the occupancy grid more often, at the expense of greater computational load.
 
-  maxUrange : 10
+  maxUrange : 28
   # The maximum usable range of the laser. A beam is cropped to this value. 
 
   sigma : 0.05
