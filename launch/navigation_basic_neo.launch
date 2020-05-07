@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+
+        <include file="$(find neo_mpo_500)/configs/navigation/neo_localization/neo_localization.launch"/>
+        <include file="$(find neo_mpo_500)/configs/navigation/move_base/move_base.launch"/>
+
+</launch>
