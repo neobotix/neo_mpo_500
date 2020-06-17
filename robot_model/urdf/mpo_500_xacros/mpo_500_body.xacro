@@ -12,8 +12,6 @@
     <child link="${name}" />
    </joint>
 
-<!-- Kinetic -->
-<!-- <xacro:macro name="mpo_500_base" params="name"> -->
 
 <!-- Link -->
   <link name="${name}">
