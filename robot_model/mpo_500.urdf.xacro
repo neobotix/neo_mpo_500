@@ -30,8 +30,6 @@
   <!-- ur5 -->
   <xacro:include filename="$(find neo_mpo_500)/robot_model/urdf/ur_5_xacros/ur5.urdf.xacro" />
 
-
-<!-- Melodic -->
   <!-- Base Macro-->
 <link name="base_link" />
 
@@ -39,12 +37,6 @@
   <xacro:mpo_500_base name="base_footprint" parent="base_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
   </xacro:mpo_500_base>
-
-
-
-<!-- Kinetic -->
-<!--   <xacro:mpo_500_base name="base_link">
-  </xacro:mpo_500_base> -->
 
 
   <!-- Wheel Macro -->
