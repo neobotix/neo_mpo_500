@@ -40,7 +40,7 @@ NeoLocalPlanner:
   xy_goal_tolerance : 0.01
 
   # How long to fine tune for goal position after reaching tolerance limits [s]
-  goal_tune_time : 0.5
+  goal_tune_time : 2
 
   # How far to predict control pose into the future based on latest odometry [s]
   lookahead_time : 0.4
