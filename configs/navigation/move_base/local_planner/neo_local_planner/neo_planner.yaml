@@ -61,16 +61,16 @@ NeoLocalPlanner:
   static_yaw_gain : 3
 
   # Gain for x cost avoidance (holonomic only)
-  cost_x_gain : 0.1
+  cost_x_gain : 0.2
 
   # Gain for y cost avoidance (holonomic only)
-  cost_y_gain : 0.1
+  cost_y_gain : 0.2
 
   # How far ahead to compute y cost gradient (constant offset) [m]
   cost_y_lookahead_dist : 0
 
   # How far ahead to compute y cost gradient (dynamic offset) [s]
-  cost_y_lookahead_time : 0.3
+  cost_y_lookahead_time : 2
 
   # Gain for yaw cost avoidance
   cost_yaw_gain : 2
@@ -82,7 +82,7 @@ NeoLocalPlanner:
   max_cost : 0.95
 
   # Max velocity based on curvature [rad/s]
-  max_curve_vel : 0.4
+  max_curve_vel : 0.3
 
   # Max distance to goal when looking for it [m]
   max_goal_dist : 0.5
@@ -91,7 +91,7 @@ NeoLocalPlanner:
   max_backup_dist : 0
 
   # Minimal distance for stopping [m]
-  min_stop_dist : 0.4
+  min_stop_dist : 0.6
 
   # If robot has differential drive, holonomic otherwise
   differential_drive : false
