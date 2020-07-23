@@ -16,7 +16,7 @@ conservative_reset_dist: 3.0
 recovery_behavior_enabled: true
 #Whether or not to enable the move_base recovery behaviors to attempt to clear out space. (bool, default: true)
 
-clearing_rotation_allowed: true
+clearing_rotation_allowed: false
 #Determines whether or not the robot will attempt an in-place rotation when attempting to clear out space. 
 #Note: This parameter is only used when the default recovery behaviors are in use, 
 #meaning the user has not set the recovery_behaviors parameter to anything custom. (bool, default: true) 
